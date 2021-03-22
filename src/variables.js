@@ -6,3 +6,8 @@ export const colors = {
 	greyColor: "#9194A2",
 	whiteColor: "#fff",
 };
+
+// Transition
+export const transition = {
+	transition: "all 0.3s ease",
+};

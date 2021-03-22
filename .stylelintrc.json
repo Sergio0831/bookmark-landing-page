@@ -595,7 +595,7 @@
 			}
 		],
 		"no-eol-whitespace": true,
-		"no-extra-semicolons": true,
+		"no-extra-semicolons": null,
 		"no-invalid-double-slash-comments": true,
 		"no-missing-end-of-source-newline": null,
 		"no-unknown-animations": true,
