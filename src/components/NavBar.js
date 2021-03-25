@@ -4,7 +4,6 @@ import { Link as LinkS } from "react-scroll";
 import styled from "styled-components";
 import { colors, transition } from "../variables";
 import Logo from "./Logo";
-
 import { device, font } from "../mixins";
 import MenuIcon from "./MenuIcon";
 import SocialIcons from "./SocialIcons";
@@ -33,16 +32,16 @@ const NavBar = () => {
 
 	return (
 		<>
-			<Header>
-				<HeaderContainer>
-					<HeaderLogo>
+			<Nav>
+				<NavContainer>
+					<NavLogo>
 						<Logo mobile={isOpen} />
-					</HeaderLogo>
-					<HeaderMenu>
+					</NavLogo>
+					<NavMenu>
 						<MenuIconContainer onClick={toggleMenu}>
 							{!isOpen ? <MenuIcon /> : <CloseIcon />}
 						</MenuIconContainer>
-						<MenuBody isOpen={isOpen} onClick={toggleMenu}>
+						<MenuBody isOpen={isOpen}>
 							<MenuList>
 								<MenuItem>
 									<MenuLink to="features">Features</MenuLink>
@@ -61,24 +60,24 @@ const NavBar = () => {
 								<SocialIcons color={"#fff"} />
 							</MobileSocialIcons>
 						</MenuBody>
-					</HeaderMenu>
-				</HeaderContainer>
-			</Header>
+					</NavMenu>
+				</NavContainer>
+			</Nav>
 		</>
 	);
 };
 
 export default NavBar;
 
-const Header = styled.nav`
+const Nav = styled.nav`
 	padding: 4.8rem 3.3rem 0;
 
 	@media ${device.tablet} {
-		padding: 4rem 3.3rem 0;
+		padding-top: 4rem;
 	}
 `;
 
-const HeaderContainer = styled.div`
+const NavContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -87,13 +86,13 @@ const HeaderContainer = styled.div`
 	max-width: 110rem;
 `;
 
-const HeaderLogo = styled.div`
+const NavLogo = styled.div`
 	z-index: 10;
 	display: grid;
 	align-items: center;
 `;
 
-const HeaderMenu = styled.ul`
+const NavMenu = styled.ul`
 	display: flex;
 `;
 
@@ -112,7 +111,7 @@ const MenuBody = styled.div`
 		position: fixed;
 		left: 0;
 		top: 0;
-		z-index: -5;
+		z-index: ${({ isOpen }) => (isOpen ? "5" : "-5")};
 		display: grid;
 		overflow: auto;
 		padding-top: 10.5rem;

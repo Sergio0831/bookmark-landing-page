@@ -4,12 +4,25 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { colors, transition } from "../variables";
+import { Link } from "react-router-dom";
 
 const SocialIcons = () => {
 	return (
 		<IconContext.Provider value={{ size: "2.4rem" }}>
-			<Twitter />
-			<Facebook />
+			<Link
+				to={{ pathname: "http://twitter.com" }}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Twitter />
+			</Link>
+			<Link
+				to={{ pathname: "http://facebook.com" }}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<Facebook />
+			</Link>
 		</IconContext.Provider>
 	);
 };

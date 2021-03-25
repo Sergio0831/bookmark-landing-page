@@ -20,5 +20,5 @@ export const font = ({ color, size, weight, height, spacing }) => `
 	font-size: ${size || "1.8rem"};
 	font-weight: ${weight || "400"};
 	line-height: ${height || "1rem"};
-	letter-spacing: ${spacing || "1.5px"}
+	letter-spacing: ${spacing || "0.15px"}
 `;
