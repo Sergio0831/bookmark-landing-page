@@ -11,12 +11,16 @@ const GlobalStyle = createGlobalStyle`
 
 html {
 	font-size: 62.5%;
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		font-size: 50%;
+	}
 }
 
 body {
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
-	color: #242a45;
+    font-weight: ${(props) => props.theme.fontWeights.regular};
+	color: ${(props) => props.theme.colors.darkColor};
 }
 
 li {

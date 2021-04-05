@@ -2,7 +2,7 @@ const size = {
 	desktopL: "112.5em", // 1800px
 	laptopL: "87.5em", // 1440px
 	laptop: "64em", // 1024px
-	tablet: "48em", // 768px
+	tablet: "48.01em", // 769px
 	mobile: "28em", // 450px
 };
 
