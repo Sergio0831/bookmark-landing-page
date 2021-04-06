@@ -17,5 +17,5 @@ const Questions = () => {
 export default Questions;
 
 const StyledQuestions = styled.section`
-	padding-top: 15rem;
+	padding-top: 13rem;
 `;

@@ -20,6 +20,7 @@ export const StyledButton = styled(LinkR)`
 `;
 
 export const PrimaryButton = styled(StyledButton)`
+	display: ${(props) => props.display};
 	padding: ${({ padding }) => padding || "0.8rem 2.2rem"};
 	color: ${(props) => props.theme.colors.whiteColor};
 	background: ${(props) => props.theme.colors.primaryColor};

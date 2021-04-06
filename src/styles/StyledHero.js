@@ -17,17 +17,17 @@ export const StyledHero = styled.div`
 		background-color: ${(props) => props.theme.colors.primaryColor};
 
 		@media ${({ theme }) => theme.mediaQueries.laptop} {
-			right: -28rem;
+			right: -35rem;
 			top: 13.6rem;
 			width: 70rem;
 			height: 26rem;
 		}
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
-			right: -20rem;
-			top: 16.6rem;
+			right: -27rem;
+			top: 13.6rem;
 			width: 57.7rem;
-			height: 25rem;
+			height: 20rem;
 		}
 	}
 
@@ -41,6 +41,10 @@ export const SectionContent = styled.div`
 	display: flex;
 	align-items: center;
 
+	@media ${({ theme }) => theme.mediaQueries.laptopL} {
+		padding: 0 1rem;
+	}
+
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		flex-direction: column-reverse;
 	}
@@ -49,9 +53,16 @@ export const SectionContent = styled.div`
 export const ContentTextBox = styled.div`
 	width: 50%;
 
-	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		margin-top: 7.4rem;
+	@media ${({ theme }) => theme.mediaQueries.laptopL} {
+		width: 60%;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.laptop} {
 		width: 100%;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		margin-top: 6rem;
 		text-align: center;
 	}
 `;
@@ -70,15 +81,16 @@ export const HeadingPrimary = styled.h1`
 		line-height: 4.2rem;
 	}
 
-	@media ${({ theme }) => theme.mediaQueries.laptop} {
-		margin-bottom: 3.6rem;
+	@media ${({ theme }) => theme.mediaQueries.mobile} {
+		margin-bottom: 1.6rem;
+		font-size: 3rem;
 	}
 `;
 
 export const ImageContainer = styled.div`
 	margin-right: -11rem;
 
-	@media ${({ theme }) => theme.mediaQueries.laptop} {
+	@media ${({ theme }) => theme.mediaQueries.laptopL} {
 		margin-right: 0;
 	}
 `;

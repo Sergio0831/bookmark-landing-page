@@ -1,4 +1,4 @@
-export default {
+const Theme = {
 	colors: {
 		primaryColor: "#5267DF",
 		secondaryColor: "#FA5959",
@@ -23,3 +23,5 @@ export default {
 		mobile: `only screen and (max-width: 28em)`, // 450px
 	},
 };
+
+export default Theme;

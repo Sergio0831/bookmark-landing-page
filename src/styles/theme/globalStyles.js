@@ -11,10 +11,6 @@ const GlobalStyle = createGlobalStyle`
 
 html {
 	font-size: 62.5%;
-
-	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		font-size: 50%;
-	}
 }
 
 body {

@@ -70,7 +70,7 @@ const StyledNavBar = styled.nav`
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.mobile} {
-		padding: 4.8rem 4rem 0;
+		padding: 4.8rem 3.2rem 0;
 	}
 `;
 
