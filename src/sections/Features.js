@@ -23,6 +23,6 @@ const StyledFeatures = styled.section`
 	padding-top: 8rem;
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		padding: 14rem 3.2rem 0;
+		padding: 15rem 3.2rem 0;
 	}
 `;

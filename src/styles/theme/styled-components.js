@@ -27,6 +27,7 @@ export const Title = styled.h2`
 	@media ${({ theme }) => theme.mediaQueries.mobile} {
 		margin-bottom: 0;
 		font-size: 2.4rem;
+		line-height: 3rem;
 	}
 `;
 
@@ -53,6 +54,7 @@ export const Paragraph = styled.p`
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.mobile} {
+		margin-top: 1.6rem;
 		font-size: 1.5rem;
 		line-height: 2.5rem;
 		color: rgba(36, 42, 69, 0.5);

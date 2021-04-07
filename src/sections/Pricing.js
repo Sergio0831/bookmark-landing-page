@@ -41,7 +41,7 @@ export const PricingCards = styled.div`
 	display: flex;
 	align-items: end;
 	justify-content: center;
-	margin-top: 2.6rem;
+	margin-top: 5.6rem;
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		flex-direction: column;

@@ -28,9 +28,9 @@ export const StyledTabs = styled.div`
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
 			right: 4rem;
-			bottom: 37rem;
+			bottom: 32rem;
 			width: 57.7rem;
-			height: 21rem;
+			height: 20rem;
 		}
 	}
 
@@ -52,9 +52,6 @@ export const Content = styled.div`
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		flex-direction: column;
-	}
-
-	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding-bottom: 10rem;
 	}
 `;
@@ -75,7 +72,7 @@ export const ContentText = styled.div`
 		max-width: 100%;
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
-			padding-top: 2.5rem;
+			padding-top: 3.5rem;
 		}
 	}
 `;
