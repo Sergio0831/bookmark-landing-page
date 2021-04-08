@@ -8,16 +8,17 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-	margin-bottom: 1.6rem;
+	margin-bottom: ${(props) => props.mb || "1.6rem"};
 	font-weight: 500;
 	font-size: 3.2rem;
-	line-height: 5.2rem;
+	line-height: ${(props) => props.lh || "5.2rem"};
 	letter-spacing: -0.1px;
 	text-align: ${(props) => props.textAlign || "center"};
+	color: ${(props) => props.color};
 
 	@media ${({ theme }) => theme.mediaQueries.laptop} {
 		font-size: 3rem;
-		line-height: 5.4rem;
+		line-height: ${(props) => props.lh || "5.4rem"};
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ArrowIcon = ({ showInfo }) => {
 	return (
 		<StyledArrowIcon
-			style={{ transform: showInfo ? "rotate(180deg)" : "none" }}
+			style={{ transform: showInfo ? "rotateZ(-180deg)" : "none" }}
 			xmlns="http://www.w3.org/2000/svg"
 			width="18"
 			height="12"
