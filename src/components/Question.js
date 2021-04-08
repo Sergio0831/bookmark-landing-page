@@ -1,18 +1,30 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowIcon from "./ArrowIcon";
-import { StyledQuestion, Header, Title, Info } from "../styles/styledQuestion";
+import {
+	StyledQuestion,
+	Header,
+	Title,
+	Info,
+	Content,
+} from "../styles/styledQuestion";
 
 const Question = ({ title, info }) => {
 	const [showInfo, setShowInfo] = useState(false);
 
+	const handleClick = () => {
+		setShowInfo(!showInfo);
+	};
+
 	return (
 		<StyledQuestion>
-			<Header onClick={() => setShowInfo(!showInfo)}>
+			<Header onClick={handleClick}>
 				<Title>{title}</Title>
 				<ArrowIcon showInfo={showInfo} />
 			</Header>
-			{showInfo && <Info showInfo>{info}</Info>}
+			<Content showInfo={showInfo}>
+				<Info showInfo={showInfo}>{info}</Info>
+			</Content>
 		</StyledQuestion>
 	);
 };

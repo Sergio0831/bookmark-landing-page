@@ -50,13 +50,23 @@ export const Title = styled.h3`
 	}
 `;
 
+export const Content = styled.div`
+	overflow: hidden;
+	max-height: ${(props) => (props.showInfo ? "100rem" : "0rem")};
+	transition: ${(props) =>
+		props.showInfo
+			? "max-height 1s ease-in-out"
+			: "max-height 0.5s cubic-bezier(0, 1, 0, 1)"};
+`;
+
 export const Info = styled.p`
 	font-size: 1.6rem;
 	line-height: 3.6rem;
 	letter-spacing: 0.15px;
 	color: rgba(36, 42, 69, 0.75);
-	transition: all 0.3s ease;
-	transition-delay: 1s;
+	opacity: ${(props) => (props.showInfo ? "1" : "0")};
+	transform: ${(props) => (props.showInfo ? "scale(1)" : "scale(0.6)")};
+	transition: all 0.5s ease;
 
 	@media ${({ theme }) => theme.mediaQueries.mobile} {
 		font-size: 1.5rem;
