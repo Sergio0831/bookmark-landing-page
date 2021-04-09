@@ -6,12 +6,12 @@ import Questions from "../sections/Questions";
 
 const Main = () => {
 	return (
-		<>
+		<main>
 			<Features />
 			<Pricing />
 			<Questions />
 			<Contact />
-		</>
+		</main>
 	);
 };
 

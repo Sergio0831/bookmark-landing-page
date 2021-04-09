@@ -8,24 +8,30 @@ const Contact = () => {
 	const [isValid, setIsValid] = useState(false);
 	const [message, setMessage] = useState("");
 
+	const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
 	const handleChange = (e) => {
 		const email = e.target.value;
 		setEmail(email);
+		if (!regex.test(email)) {
+			setMessage("Whoops, make sure it’s an email");
+			setIsValid(true);
+		} else {
+			setIsValid(false);
+			setMessage("");
+		}
 	};
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
 
-		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-
 		if (!regex.test(email)) {
 			setMessage("Whoops, make sure it’s an email");
-			setIsValid(false);
-		} else {
 			setIsValid(true);
+		} else {
+			setIsValid(false);
 			setMessage("");
 			setEmail("");
-			console.log(email);
 		}
 	};
 
@@ -46,7 +52,7 @@ const Contact = () => {
 							placeholder="Enter your email address"
 							id="email"
 						/>
-						<ErrorMessage>{message}</ErrorMessage>
+						<ErrorMessage isValid={!isValid}>{message}</ErrorMessage>
 					</ValidationContainer>
 					<SubmitButton type="submit">Contact Us</SubmitButton>
 				</StyledContactForm>
@@ -84,6 +90,8 @@ const StyledContactForm = styled.form`
 `;
 
 const ValidationContainer = styled.div`
+	position: relative;
+
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		width: 100%;
 	}
@@ -95,19 +103,22 @@ const Label = styled.label`
 
 const Input = styled.input`
 	position: relative;
+	z-index: 2;
 	outline: none;
-
-	border: ${(isValid) =>
-		isValid ? "2px solid transparent" : "2px solid #FA5959"};
+	border: ${(props) =>
+		props.isValid ? "2px solid transparent" : "2px solid #FA5959"};
 	border-top-left-radius: 0.5rem;
 	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: ${(props) => (props.isValid ? "0.5rem" : "none")};
+	border-bottom-left-radius: ${(props) => (props.isValid ? "0.5rem" : "none")};
 	padding: 0.8rem 1.8rem;
 	width: 26.5rem;
 	font-family: inherit;
 	font-size: 1.4rem;
 	line-height: 2.8rem;
 	letter-spacing: 0.25px;
-	background-image: url(${ErrorIcon});
+	background-image: ${(props) =>
+		props.isValid ? "none" : `url(${ErrorIcon})`};
 	background-position: right 1.6rem top 50%;
 	background-repeat: no-repeat;
 	background-color: ${(props) => props.theme.colors.whiteColor};
@@ -120,12 +131,15 @@ const Input = styled.input`
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		box-sizing: border-box;
 		width: 100%;
+		box-sizing: border-box;
 	}
 `;
 
 const ErrorMessage = styled.p`
+	position: absolute;
+	left: 0;
+	right: 0;
 	border-bottom-right-radius: 0.5rem;
 	border-bottom-left-radius: 0.5rem;
 	padding: 4px 0 6px 1.2rem;
@@ -136,6 +150,9 @@ const ErrorMessage = styled.p`
 	letter-spacing: 0.25px;
 	color: ${(props) => props.theme.colors.whiteColor};
 	background-color: ${(props) => props.theme.colors.secondaryColor};
+	transform: ${(props) =>
+		props.isValid ? "translateY(-100%)" : "translateY(0)"};
+	transition: ${(props) => props.theme.transitions.basic};
 `;
 
 const SubmitButton = styled.button`
@@ -163,7 +180,7 @@ const SubmitButton = styled.button`
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		margin-top: 1.6rem;
+		margin-top: 2.6rem;
 		margin-left: 0;
 		width: 100%;
 	}

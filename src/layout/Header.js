@@ -4,10 +4,10 @@ import Hero from "../sections/Hero";
 
 const Header = () => {
 	return (
-		<>
+		<header>
 			<NavBar />
 			<Hero />
-		</>
+		</header>
 	);
 };
 
