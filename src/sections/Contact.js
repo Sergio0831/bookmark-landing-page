@@ -38,15 +38,14 @@ const Contact = () => {
 				</Title>
 				<StyledContactForm onSubmit={handleFormSubmit} noValidate>
 					<ValidationContainer>
-						<Label htmlFor="email">
-							<Input
-								isValid={!isValid}
-								value={email}
-								onChange={handleChange}
-								placeholder="Enter your email address"
-								id="email"
-							/>
-						</Label>
+						<Label htmlFor="email"></Label>
+						<Input
+							isValid={!isValid}
+							value={email}
+							onChange={handleChange}
+							placeholder="Enter your email address"
+							id="email"
+						/>
 						<ErrorMessage>{message}</ErrorMessage>
 					</ValidationContainer>
 					<SubmitButton type="submit">Contact Us</SubmitButton>
@@ -58,9 +57,13 @@ const Contact = () => {
 
 export default Contact;
 
-const StyledContact = styled.div`
+const StyledContact = styled.section`
 	padding: 5.4rem 0 7.4rem;
 	background-color: ${(props) => props.theme.colors.primaryColor};
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		padding: 6rem 3.2rem 4.8rem;
+	}
 `;
 
 const ContactSubtitle = styled.p`
@@ -81,7 +84,9 @@ const StyledContactForm = styled.form`
 `;
 
 const ValidationContainer = styled.div`
-	position: relative;
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		width: 100%;
+	}
 `;
 
 const Label = styled.label`
@@ -91,6 +96,7 @@ const Label = styled.label`
 const Input = styled.input`
 	position: relative;
 	outline: none;
+
 	border: ${(isValid) =>
 		isValid ? "2px solid transparent" : "2px solid #FA5959"};
 	border-top-left-radius: 0.5rem;
@@ -111,6 +117,11 @@ const Input = styled.input`
 		line-height: inherit;
 		letter-spacing: 0.25px;
 		color: rgba(36, 42, 69, 0.25);
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		box-sizing: border-box;
+		width: 100%;
 	}
 `;
 
@@ -149,5 +160,11 @@ const SubmitButton = styled.button`
 		box-sizing: border-box;
 		color: ${(props) => props.theme.colors.secondaryColor};
 		background-color: ${(props) => props.theme.colors.whiteColor};
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		margin-top: 1.6rem;
+		margin-left: 0;
+		width: 100%;
 	}
 `;

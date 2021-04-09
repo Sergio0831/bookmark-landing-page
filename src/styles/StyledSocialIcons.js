@@ -3,7 +3,6 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 export const Twitter = styled(FaTwitter)`
-	margin-right: 4rem;
 	color: ${(props) => props.theme.colors.whiteColor};
 	transition: ${(props) => props.theme.transitions.transition};
 	cursor: pointer;
@@ -14,6 +13,7 @@ export const Twitter = styled(FaTwitter)`
 `;
 
 export const Facebook = styled(FaFacebook)`
+	margin-right: 4rem;
 	color: ${(props) => props.theme.colors.whiteColor};
 	transition: ${(props) => props.theme.transitions.basic};
 	cursor: pointer;
