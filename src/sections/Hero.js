@@ -10,13 +10,20 @@ import {
 	ContentImage,
 } from "../styles/StyledHero";
 import { PrimaryButton, SecondaryButton } from "../styles/StyledButton";
+import { motion } from "framer-motion";
+import { imageHeroVariants, textHeroVariants } from "../animation/variants";
 
 const Hero = () => {
 	return (
 		<StyledHero>
 			<Wrapper>
 				<SectionContent>
-					<ContentTextBox>
+					<ContentTextBox
+						as={motion.div}
+						variants={textHeroVariants}
+						initial="hidden"
+						animate="visible"
+					>
 						<HeadingPrimary>A simple bookmark manager</HeadingPrimary>
 						<Paragraph mb={"3.2rem"}>
 							A clean and simple interface to organize your favourite websites.
@@ -26,7 +33,12 @@ const Hero = () => {
 						<PrimaryButton to="/">Get it on Chrome</PrimaryButton>
 						<SecondaryButton to="/">Get it on Firefox</SecondaryButton>
 					</ContentTextBox>
-					<ImageContainer>
+					<ImageContainer
+						as={motion.div}
+						variants={imageHeroVariants}
+						initial="hidden"
+						animate="visible"
+					>
 						<ContentImage src={HeroBanner} alt="Hero Image" />
 					</ImageContainer>
 				</SectionContent>

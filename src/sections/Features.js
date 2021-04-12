@@ -5,7 +5,7 @@ import { Paragraph, Title } from "../styles/theme/styled-components";
 
 const Features = () => {
 	return (
-		<StyledFeatures>
+		<StyledFeatures name="features">
 			<Title>Features</Title>
 			<Paragraph textAlign="center" width="54rem">
 				Our aim is to make it quick and easy for you to access your favourite

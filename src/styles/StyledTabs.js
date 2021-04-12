@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const StyledTabs = styled.div`
 	position: relative;
@@ -23,7 +24,8 @@ export const StyledTabs = styled.div`
 		}
 
 		@media ${({ theme }) => theme.mediaQueries.tablet} {
-			bottom: 37rem;
+			right: 20rem;
+			bottom: 32rem;
 		}
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
@@ -52,13 +54,14 @@ export const Content = styled.div`
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		flex-direction: column;
-		padding-bottom: 10rem;
+		padding-bottom: 11rem;
 	}
 `;
 
 export const ContentText = styled.div`
 	max-width: 44.5rem;
-	transform: translateY(25%);
+	transform: translateY(15%);
+	transition: all 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 
 	@media ${({ theme }) => theme.mediaQueries.laptop} {
 		padding-right: 1rem;
@@ -72,12 +75,12 @@ export const ContentText = styled.div`
 		max-width: 100%;
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
-			padding-top: 3.5rem;
+			padding-top: 1.5rem;
 		}
 	}
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled(motion.div)`
 	position: absolute;
 	left: 0;
 	top: 12rem;

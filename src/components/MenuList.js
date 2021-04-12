@@ -10,13 +10,37 @@ const MenuList = () => {
 	return (
 		<StyledMenuList>
 			<MenuItem>
-				<MenuLink to="features">Features</MenuLink>
+				<MenuLink
+					smooth={true}
+					duration={500}
+					spy={true}
+					exact="true"
+					to="features"
+				>
+					Features
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink to="pricing">Pricing</MenuLink>
+				<MenuLink
+					to="pricing"
+					smooth={true}
+					duration={500}
+					spy={true}
+					exact="true"
+				>
+					Pricing
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
-				<MenuLink to="contact">Contact</MenuLink>
+				<MenuLink
+					to="contact"
+					smooth={true}
+					duration={500}
+					spy={true}
+					exact="true"
+				>
+					Contact
+				</MenuLink>
 			</MenuItem>
 			<MenuItem>
 				<BtnLink to="/login">Login</BtnLink>

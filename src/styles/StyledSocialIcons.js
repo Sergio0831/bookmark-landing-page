@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaTwitter } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 export const Twitter = styled(FaTwitter)`
 	color: ${(props) => props.theme.colors.whiteColor};
@@ -12,7 +12,7 @@ export const Twitter = styled(FaTwitter)`
 	}
 `;
 
-export const Facebook = styled(FaFacebook)`
+export const Facebook = styled(FaFacebookSquare)`
 	margin-right: 4rem;
 	color: ${(props) => props.theme.colors.whiteColor};
 	transition: ${(props) => props.theme.transitions.basic};

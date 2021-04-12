@@ -6,7 +6,7 @@ import Question from "../components/Question";
 import { PrimaryButton } from "../styles/StyledButton";
 
 const Questions = () => {
-	const [questions, setQuestions] = useState(data);
+	const [questions] = useState(data);
 
 	return (
 		<StyledQuestions>
@@ -33,6 +33,10 @@ export default Questions;
 
 const StyledQuestions = styled.section`
 	padding: 14rem 0 15rem;
+
+	@media ${({ theme }) => theme.mediaQueries.laptop} {
+		padding: 4rem 0 15rem;
+	}
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding: 11rem 3.2rem;

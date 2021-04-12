@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const StyledHero = styled.div`
 	position: relative;
 	padding-top: 9.8rem;
-	padding-bottom: 3.6rem;
+	padding-bottom: 21rem;
 
 	&::after {
 		content: "";
@@ -16,11 +17,15 @@ export const StyledHero = styled.div`
 		height: 35.2rem;
 		background-color: ${(props) => props.theme.colors.primaryColor};
 
+		@media ${({ theme }) => theme.mediaQueries.laptopL} {
+			top: 25.6rem;
+			height: 26rem;
+		}
+
 		@media ${({ theme }) => theme.mediaQueries.laptop} {
 			right: -35rem;
 			top: 13.6rem;
 			width: 70rem;
-			height: 26rem;
 		}
 
 		@media ${({ theme }) => theme.mediaQueries.mobile} {
@@ -32,7 +37,7 @@ export const StyledHero = styled.div`
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.laptop} {
-		padding: 10rem 3.2rem 0;
+		padding: 2rem 3.2rem 8rem;
 	}
 `;
 
@@ -50,20 +55,19 @@ export const SectionContent = styled.div`
 	}
 `;
 
-export const ContentTextBox = styled.div`
+export const ContentTextBox = styled(motion.div)`
 	width: 50%;
-
-	@media ${({ theme }) => theme.mediaQueries.laptopL} {
-		width: 60%;
-	}
-
-	@media ${({ theme }) => theme.mediaQueries.laptop} {
-		width: 100%;
-	}
+	transform: translateY(9rem);
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		margin-top: 6rem;
+		margin-top: 40rem;
+		width: 100%;
 		text-align: center;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.mobile} {
+		margin-top: 27.5rem;
+		width: 100%;
 	}
 `;
 
@@ -88,24 +92,44 @@ export const HeadingPrimary = styled.h1`
 `;
 
 export const ImageContainer = styled.div`
-	margin-right: -11rem;
+	position: absolute;
+	right: -12rem;
+	top: 1rem;
 
-	@media ${({ theme }) => theme.mediaQueries.laptopL} {
-		margin-right: 0;
+	@media ${({ theme }) => theme.mediaQueries.laptop} {
+		right: -28rem;
+		top: 7rem;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		right: -10rem;
+		top: 6rem;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.mobile} {
+		right: 1rem;
+		top: 6rem;
 	}
 `;
 
 export const ContentImage = styled.img`
 	display: block;
-	width: 100%;
 	height: auto;
 	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 
+	@media ${({ theme }) => theme.mediaQueries.laptopL} {
+		width: 85%;
+	}
+
 	@media ${({ theme }) => theme.mediaQueries.laptop} {
-		margin-right: 0;
+		width: 60%;
+	}
+
+	@media ${({ theme }) => theme.mediaQueries.tablet} {
+		width: 80%;
 	}
 
 	@media ${({ theme }) => theme.mediaQueries.mobile} {
-		width: 107%;
+		width: 110%;
 	}
 `;

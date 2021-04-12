@@ -8,7 +8,7 @@ import Opera from "../img/logo-opera.svg";
 
 const Pricing = () => {
 	return (
-		<StyledPricing>
+		<StyledPricing name="pricing">
 			<Title>Download the extension</Title>
 			<Paragraph textAlign="center" width="54rem">
 				We’ve got more browsers in the pipeline. Please do let us know if you’ve
@@ -27,6 +27,10 @@ export default Pricing;
 
 const StyledPricing = styled.section`
 	padding-top: 15rem;
+
+	@media ${({ theme }) => theme.mediaQueries.laptop} {
+		padding: 4rem;
+	}
 
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding-top: 0;

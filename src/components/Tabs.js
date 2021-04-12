@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import BookmarkImg from "../img/illustration-features-tab-1.svg";
-import SearchingImg from "../img/illustration-features-tab-2.svg";
-import SharingImg from "../img/illustration-features-tab-3.svg";
 import { Paragraph, Title, Wrapper } from "../styles/theme/styled-components";
 import { PrimaryButton } from "../styles/StyledButton";
 import TabList from "./TabList";
@@ -14,6 +11,8 @@ import {
 	ButtonContainer,
 } from "../styles/StyledTabs";
 import content from "../data/TabsData";
+import { imageTabVariants, textTabVariants } from "../animation/variants";
+import { motion } from "framer-motion";
 
 const Tabs = () => {
 	const [active, setActive] = useState(0);
