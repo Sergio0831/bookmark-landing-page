@@ -5,13 +5,13 @@ import { Paragraph, Title } from "../styles/theme/styled-components";
 
 const Features = () => {
 	return (
-		<StyledFeatures name="features">
+		<StyledFeatures id="features">
 			<Title>Features</Title>
-			<Paragraph textAlign="center" width="54rem">
+			<StyledParagraph>
 				Our aim is to make it quick and easy for you to access your favourite
 				websites. Your bookmarks sync between your devices so you can access
 				them on the go.
-			</Paragraph>
+			</StyledParagraph>
 			<Tabs />
 		</StyledFeatures>
 	);
@@ -25,4 +25,9 @@ const StyledFeatures = styled.section`
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding: 15rem 3.2rem 0;
 	}
+`;
+
+const StyledParagraph = styled(Paragraph)`
+	max-width: 54rem;
+	text-align: center;
 `;

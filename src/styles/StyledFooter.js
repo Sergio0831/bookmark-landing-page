@@ -24,10 +24,16 @@ export const FooterContent = styled.div`
 	}
 `;
 
-export const FooterLogoLink = styled(LinkS)`
+export const FooterLogoLink = styled.button`
 	display: flex;
 	align-items: center;
+	border: none;
+	background: none;
 	cursor: pointer;
+
+	&:focus {
+		outline: 1px dashed ${(props) => props.theme.colors.primaryColor};
+	}
 `;
 
 export const FooterMenu = styled.div`

@@ -19,7 +19,6 @@ const MenuList = ({ setIsOpen }) => {
 					smooth={true}
 					duration={500}
 					spy={true}
-					exact="true"
 					to="features"
 				>
 					Features
@@ -32,7 +31,6 @@ const MenuList = ({ setIsOpen }) => {
 					smooth={true}
 					duration={500}
 					spy={true}
-					exact="true"
 				>
 					Pricing
 				</MenuLink>
@@ -44,7 +42,6 @@ const MenuList = ({ setIsOpen }) => {
 					smooth={true}
 					duration={500}
 					spy={true}
-					exact="true"
 				>
 					Contact
 				</MenuLink>

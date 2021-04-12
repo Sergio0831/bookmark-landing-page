@@ -4,18 +4,18 @@
     "static/js/0.572ee021.chunk.js.map": "/static/js/0.572ee021.chunk.js.map",
     "static/js/1.813c6d91.chunk.js": "/static/js/1.813c6d91.chunk.js",
     "static/js/1.813c6d91.chunk.js.map": "/static/js/1.813c6d91.chunk.js.map",
-    "main.js": "/static/js/main.fda4cb51.chunk.js",
-    "main.js.map": "/static/js/main.fda4cb51.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.adbfbeba.js",
-    "runtime-main.js.map": "/static/js/runtime-main.adbfbeba.js.map",
+    "main.js": "/static/js/main.e3e9dcfe.chunk.js",
+    "main.js.map": "/static/js/main.e3e9dcfe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.078b1f70.js",
+    "runtime-main.js.map": "/static/js/runtime-main.078b1f70.js.map",
     "static/js/4.fdcebd33.chunk.js": "/static/js/4.fdcebd33.chunk.js",
     "static/js/4.fdcebd33.chunk.js.map": "/static/js/4.fdcebd33.chunk.js.map",
-    "static/js/5.d03d63a5.chunk.js": "/static/js/5.d03d63a5.chunk.js",
-    "static/js/5.d03d63a5.chunk.js.map": "/static/js/5.d03d63a5.chunk.js.map",
-    "static/js/6.451ade0f.chunk.js": "/static/js/6.451ade0f.chunk.js",
-    "static/js/6.451ade0f.chunk.js.map": "/static/js/6.451ade0f.chunk.js.map",
-    "static/js/7.68562649.chunk.js": "/static/js/7.68562649.chunk.js",
-    "static/js/7.68562649.chunk.js.map": "/static/js/7.68562649.chunk.js.map",
+    "static/js/5.fc1455f4.chunk.js": "/static/js/5.fc1455f4.chunk.js",
+    "static/js/5.fc1455f4.chunk.js.map": "/static/js/5.fc1455f4.chunk.js.map",
+    "static/js/6.159573a6.chunk.js": "/static/js/6.159573a6.chunk.js",
+    "static/js/6.159573a6.chunk.js.map": "/static/js/6.159573a6.chunk.js.map",
+    "static/js/7.65db86cb.chunk.js": "/static/js/7.65db86cb.chunk.js",
+    "static/js/7.65db86cb.chunk.js.map": "/static/js/7.65db86cb.chunk.js.map",
     "static/js/8.896d672b.chunk.js": "/static/js/8.896d672b.chunk.js",
     "static/js/8.896d672b.chunk.js.map": "/static/js/8.896d672b.chunk.js.map",
     "index.html": "/index.html",
@@ -32,8 +32,8 @@
     "static/media/logo-opera.ff14e476.svg": "/static/media/logo-opera.ff14e476.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.adbfbeba.js",
+    "static/js/runtime-main.078b1f70.js",
     "static/js/4.fdcebd33.chunk.js",
-    "static/js/main.fda4cb51.chunk.js"
+    "static/js/main.e3e9dcfe.chunk.js"
   ]
 }

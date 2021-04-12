@@ -21,35 +21,17 @@ const Footer = () => {
 		<StyledFooter>
 			<Wrapper>
 				<FooterContent>
-					<FooterLogoLink onClick={toggleHome} to="/">
+					<FooterLogoLink onClick={toggleHome}>
 						<FooterLogo />
 					</FooterLogoLink>
 					<FooterMenu>
-						<FooterLink
-							to="features"
-							smooth={true}
-							duration={500}
-							spy={true}
-							exact="true"
-						>
+						<FooterLink to="features" smooth={true} duration={500} spy={true}>
 							Features
 						</FooterLink>
-						<FooterLink
-							to="pricing"
-							smooth={true}
-							duration={500}
-							spy={true}
-							exact="true"
-						>
+						<FooterLink to="pricing" smooth={true} duration={500} spy={true}>
 							Pricing
 						</FooterLink>
-						<FooterLink
-							to="contact"
-							smooth={true}
-							duration={500}
-							spy={true}
-							exact="true"
-						>
+						<FooterLink to="contact" smooth={true} duration={500} spy={true}>
 							Contact
 						</FooterLink>
 					</FooterMenu>

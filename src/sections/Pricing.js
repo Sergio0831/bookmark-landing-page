@@ -8,7 +8,7 @@ import Opera from "../img/logo-opera.svg";
 
 const Pricing = () => {
 	return (
-		<StyledPricing name="pricing">
+		<StyledPricing id="pricing">
 			<Title>Download the extension</Title>
 			<Paragraph textAlign="center" width="54rem">
 				We’ve got more browsers in the pipeline. Please do let us know if you’ve

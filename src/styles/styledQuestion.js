@@ -35,7 +35,7 @@ export const Header = styled.button`
 	}
 `;
 
-export const Title = styled.h3`
+export const Title = styled.span`
 	font-weight: ${(props) => props.theme.fontWeights.regular};
 	font-size: 1.8rem;
 	line-height: 3.2rem;

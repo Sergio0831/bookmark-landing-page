@@ -10,7 +10,7 @@ const Questions = () => {
 
 	return (
 		<StyledQuestions>
-			<Wrapper width="54rem">
+			<StyledWrapper>
 				<Title>Frequently Asked Questions</Title>
 				<Paragraph textAlign="center" width="54rem">
 					Here are some of our FAQs. If you have any other questions you’d like
@@ -24,7 +24,7 @@ const Questions = () => {
 				<ButtonContainer>
 					<PrimaryButton to="/">More Info</PrimaryButton>
 				</ButtonContainer>
-			</Wrapper>
+			</StyledWrapper>
 		</StyledQuestions>
 	);
 };
@@ -41,6 +41,10 @@ const StyledQuestions = styled.section`
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding: 11rem 3.2rem;
 	}
+`;
+
+const StyledWrapper = styled(Wrapper)`
+	max-width: 54rem;
 `;
 
 const Accordeon = styled.div`

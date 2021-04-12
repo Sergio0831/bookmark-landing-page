@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import ErrorIcon from "../img/icon-error.svg";
+import { Wrapper } from "../styles/theme/styled-components";
+import { Title } from "../styles/theme/styled-components";
 
 export const StyledContact = styled.section`
 	padding: 5.4rem 0 7.4rem;
@@ -8,6 +10,12 @@ export const StyledContact = styled.section`
 	@media ${({ theme }) => theme.mediaQueries.tablet} {
 		padding: 6rem 3.2rem 4.8rem;
 	}
+`;
+
+export const StyledTitle = styled(Title)`
+	margin-bottom: 3.6rem;
+	line-height: 4rem;
+	color: ${(props) => props.theme.colors.whiteColor};
 `;
 
 export const ContactSubtitle = styled.p`
@@ -72,6 +80,10 @@ export const Input = styled.input`
 		width: 100%;
 		box-sizing: border-box;
 	}
+`;
+
+export const StyledWrapper = styled(Wrapper)`
+	width: 45rem;
 `;
 
 export const ErrorMessage = styled.p`

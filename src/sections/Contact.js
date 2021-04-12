@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Title, Wrapper } from "../styles/theme/styled-components";
 import {
 	StyledContact,
 	ContactSubtitle,
@@ -9,6 +8,8 @@ import {
 	Input,
 	ErrorMessage,
 	SubmitButton,
+	StyledWrapper,
+	StyledTitle,
 } from "../styles/StyledContact";
 
 const Contact = () => {
@@ -44,12 +45,10 @@ const Contact = () => {
 	};
 
 	return (
-		<StyledContact name="contact">
-			<Wrapper width="45rem">
+		<StyledContact id="contact">
+			<StyledWrapper>
 				<ContactSubtitle>35,000+ ALREADY JOINED</ContactSubtitle>
-				<Title lh="4rem" color="#fff" mb="3.6rem">
-					Stay up-to-date with what we’re doing
-				</Title>
+				<StyledTitle>Stay up-to-date with what we’re doing</StyledTitle>
 				<StyledContactForm onSubmit={handleFormSubmit} noValidate>
 					<ValidationContainer>
 						<Label htmlFor="email"></Label>
@@ -64,7 +63,7 @@ const Contact = () => {
 					</ValidationContainer>
 					<SubmitButton type="submit">Contact Us</SubmitButton>
 				</StyledContactForm>
-			</Wrapper>
+			</StyledWrapper>
 		</StyledContact>
 	);
 };

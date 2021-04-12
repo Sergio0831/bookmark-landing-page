@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Paragraph } from "../styles/theme/styled-components";
 
 export const StyledHero = styled.div`
 	position: relative;
@@ -89,6 +90,10 @@ export const HeadingPrimary = styled.h1`
 		margin-bottom: 1.6rem;
 		font-size: 3rem;
 	}
+`;
+
+export const StyledParagraph = styled(Paragraph)`
+	margin-bottom: 3.2rem;
 `;
 
 export const ImageContainer = styled.div`

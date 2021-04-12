@@ -8,6 +8,7 @@ import {
 	HeadingPrimary,
 	ImageContainer,
 	ContentImage,
+	StyledParagraph,
 } from "../styles/StyledHero";
 import { PrimaryButton, SecondaryButton } from "../styles/StyledButton";
 import { motion } from "framer-motion";
@@ -25,11 +26,11 @@ const Hero = () => {
 						animate="visible"
 					>
 						<HeadingPrimary>A simple bookmark manager</HeadingPrimary>
-						<Paragraph mb={"3.2rem"}>
+						<StyledParagraph>
 							A clean and simple interface to organize your favourite websites.
 							Open a new browser tab and see your sites load instantly. Try it
 							for free.
-						</Paragraph>
+						</StyledParagraph>
 						<PrimaryButton to="/">Get it on Chrome</PrimaryButton>
 						<SecondaryButton to="/">Get it on Firefox</SecondaryButton>
 					</ContentTextBox>
