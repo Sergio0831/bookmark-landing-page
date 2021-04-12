@@ -6,11 +6,16 @@ import {
 	BtnLink,
 } from "../styles/StyledMenuList";
 
-const MenuList = () => {
+const MenuList = ({ setIsOpen }) => {
+	const handleRemoveMenu = () => {
+		setIsOpen(false);
+	};
+
 	return (
 		<StyledMenuList>
 			<MenuItem>
 				<MenuLink
+					onClick={handleRemoveMenu}
 					smooth={true}
 					duration={500}
 					spy={true}
@@ -22,6 +27,7 @@ const MenuList = () => {
 			</MenuItem>
 			<MenuItem>
 				<MenuLink
+					onClick={handleRemoveMenu}
 					to="pricing"
 					smooth={true}
 					duration={500}
@@ -33,6 +39,7 @@ const MenuList = () => {
 			</MenuItem>
 			<MenuItem>
 				<MenuLink
+					onClick={handleRemoveMenu}
 					to="contact"
 					smooth={true}
 					duration={500}

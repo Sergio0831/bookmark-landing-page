@@ -58,7 +58,7 @@ export const Content = styled.div`
 	}
 `;
 
-export const ContentText = styled.div`
+export const ContentText = styled(motion.div)`
 	max-width: 44.5rem;
 	transform: translateY(15%);
 	transition: all 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);

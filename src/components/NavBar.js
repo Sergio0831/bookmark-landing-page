@@ -16,15 +16,6 @@ import {
 
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	// const [scroll, setScroll] = useState(false);
-
-	// const changeNav = () => {
-	// 	if (window.scroll >= 80) {
-	// 		setScroll(true);
-	// 	} else {
-	// 		setScroll(false);
-	// 	}
-	// };
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
@@ -39,11 +30,6 @@ const NavBar = () => {
 		};
 	}, [isOpen]);
 
-	// useEffect(() => {
-	// 	changeNav();
-	// 	window.addEventListener("scroll", changeNav);
-	// }, []);
-
 	return (
 		<>
 			<StyledNavBar>
@@ -56,7 +42,7 @@ const NavBar = () => {
 							{!isOpen ? <MenuIcon /> : <CloseIcon />}
 						</MenuIconContainer>
 						<MenuBody isOpen={isOpen}>
-							<MenuUl />
+							<MenuUl isOpen={isOpen} setIsOpen={setIsOpen} />
 							<MobileSocialIcons>
 								<SocialIcons color={"#fff"} />
 							</MobileSocialIcons>
