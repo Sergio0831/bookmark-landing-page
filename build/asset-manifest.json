@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.49940d76.chunk.js",
-    "main.js.map": "/static/js/main.49940d76.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.934ff842.js",
-    "runtime-main.js.map": "/static/js/runtime-main.934ff842.js.map",
-    "static/js/2.934df5ee.chunk.js": "/static/js/2.934df5ee.chunk.js",
-    "static/js/2.934df5ee.chunk.js.map": "/static/js/2.934df5ee.chunk.js.map",
-    "static/js/3.30b33796.chunk.js": "/static/js/3.30b33796.chunk.js",
-    "static/js/3.30b33796.chunk.js.map": "/static/js/3.30b33796.chunk.js.map",
+    "static/js/0.572ee021.chunk.js": "/static/js/0.572ee021.chunk.js",
+    "static/js/0.572ee021.chunk.js.map": "/static/js/0.572ee021.chunk.js.map",
+    "static/js/1.813c6d91.chunk.js": "/static/js/1.813c6d91.chunk.js",
+    "static/js/1.813c6d91.chunk.js.map": "/static/js/1.813c6d91.chunk.js.map",
+    "main.js": "/static/js/main.fda4cb51.chunk.js",
+    "main.js.map": "/static/js/main.fda4cb51.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.adbfbeba.js",
+    "runtime-main.js.map": "/static/js/runtime-main.adbfbeba.js.map",
+    "static/js/4.fdcebd33.chunk.js": "/static/js/4.fdcebd33.chunk.js",
+    "static/js/4.fdcebd33.chunk.js.map": "/static/js/4.fdcebd33.chunk.js.map",
+    "static/js/5.d03d63a5.chunk.js": "/static/js/5.d03d63a5.chunk.js",
+    "static/js/5.d03d63a5.chunk.js.map": "/static/js/5.d03d63a5.chunk.js.map",
+    "static/js/6.451ade0f.chunk.js": "/static/js/6.451ade0f.chunk.js",
+    "static/js/6.451ade0f.chunk.js.map": "/static/js/6.451ade0f.chunk.js.map",
+    "static/js/7.68562649.chunk.js": "/static/js/7.68562649.chunk.js",
+    "static/js/7.68562649.chunk.js.map": "/static/js/7.68562649.chunk.js.map",
+    "static/js/8.896d672b.chunk.js": "/static/js/8.896d672b.chunk.js",
+    "static/js/8.896d672b.chunk.js.map": "/static/js/8.896d672b.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.934df5ee.chunk.js.LICENSE.txt": "/static/js/2.934df5ee.chunk.js.LICENSE.txt",
+    "static/js/1.813c6d91.chunk.js.LICENSE.txt": "/static/js/1.813c6d91.chunk.js.LICENSE.txt",
+    "static/js/4.fdcebd33.chunk.js.LICENSE.txt": "/static/js/4.fdcebd33.chunk.js.LICENSE.txt",
     "static/media/bg-dots.90f0b46c.svg": "/static/media/bg-dots.90f0b46c.svg",
     "static/media/icon-error.a46cc665.svg": "/static/media/icon-error.a46cc665.svg",
     "static/media/illustration-features-tab-1.0da3d302.svg": "/static/media/illustration-features-tab-1.0da3d302.svg",
@@ -21,8 +32,8 @@
     "static/media/logo-opera.ff14e476.svg": "/static/media/logo-opera.ff14e476.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.934ff842.js",
-    "static/js/2.934df5ee.chunk.js",
-    "static/js/main.49940d76.chunk.js"
+    "static/js/runtime-main.adbfbeba.js",
+    "static/js/4.fdcebd33.chunk.js",
+    "static/js/main.fda4cb51.chunk.js"
   ]
 }
