@@ -38,11 +38,12 @@ export const textTabVariants = {
 	hidden: {
 		opacity: 0,
 		x: "20vw",
+		y: "25%",
 	},
 	visible: {
 		opacity: 1,
 		x: 0,
-
+		y: "25%",
 		transition: {
 			type: "spring",
 			delay: 0,
