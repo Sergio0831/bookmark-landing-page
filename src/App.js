@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Wrapper } from "./styles/theme/styled-components";
 import styled, { ThemeProvider } from "styled-components";
 import Theme from "./styles/theme/theme";
+import Loader from "./img/Position.gif";
 
 const Header = lazy(() => import("./layout/Header"));
 const Main = lazy(() => import("./layout/Main"));
@@ -15,7 +16,13 @@ function App() {
 			<ThemeProvider theme={Theme}>
 				<GlobalStyle />
 				<StyledWrapper>
-					<Suspense fallback={<h1>Loading...</h1>}>
+					<Suspense
+						fallback={
+							<StyledLoader>
+								<img src={Loader} alt="Loader"></img>
+							</StyledLoader>
+						}
+					>
 						<Header />
 						<Main />
 						<Footer />
@@ -31,4 +38,11 @@ export default App;
 const StyledWrapper = styled(Wrapper)`
 	overflow: hidden;
 	max-width: 144.4rem;
+`;
+
+const StyledLoader = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 `;

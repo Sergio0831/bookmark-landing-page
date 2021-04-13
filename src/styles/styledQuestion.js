@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledQuestion = styled.article`
+export const StyledQuestion = styled.div`
 	border-bottom: 1px solid rgba(36, 42, 69, 0.75);
 	padding: 1rem 2.4rem 1.3rem 0;
 	transition: ${(props) => props.theme.transitions.basic};
@@ -35,7 +35,7 @@ export const Header = styled.button`
 	}
 `;
 
-export const Title = styled.span`
+export const Title = styled.p`
 	font-weight: ${(props) => props.theme.fontWeights.regular};
 	font-size: 1.8rem;
 	line-height: 3.2rem;

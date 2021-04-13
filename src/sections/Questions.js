@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import { Paragraph, Title, Wrapper } from "../styles/theme/styled-components";
+import { Title } from "../styles/theme/styled-components";
 import data from "../data/QuestionsData";
 import Question from "../components/Question";
 import { PrimaryButton } from "../styles/StyledButton";
+import {
+	StyledQuestions,
+	StyledWrapper,
+	StyledParagraph,
+	Accordeon,
+	ButtonContainer,
+} from "../styles/StyledQuestions";
 
 const Questions = () => {
 	const [questions] = useState(data);
@@ -12,10 +18,10 @@ const Questions = () => {
 		<StyledQuestions>
 			<StyledWrapper>
 				<Title>Frequently Asked Questions</Title>
-				<Paragraph textAlign="center" width="54rem">
+				<StyledParagraph>
 					Here are some of our FAQs. If you have any other questions you’d like
 					answered please feel free to email us.
-				</Paragraph>
+				</StyledParagraph>
 				<Accordeon>
 					{questions.map((question) => {
 						return <Question key={question.id} {...question} />;
@@ -30,31 +36,3 @@ const Questions = () => {
 };
 
 export default Questions;
-
-const StyledQuestions = styled.section`
-	padding: 14rem 0 15rem;
-
-	@media ${({ theme }) => theme.mediaQueries.laptop} {
-		padding: 4rem 0 15rem;
-	}
-
-	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		padding: 11rem 3.2rem;
-	}
-`;
-
-const StyledWrapper = styled(Wrapper)`
-	max-width: 54rem;
-`;
-
-const Accordeon = styled.div`
-	margin: 5.6rem 0 4.4rem;
-
-	@media ${({ theme }) => theme.mediaQueries.mobile} {
-		margin: 5.4rem 0 2.8rem;
-	}
-`;
-
-const ButtonContainer = styled.div`
-	text-align: center;
-`;

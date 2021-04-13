@@ -83,7 +83,7 @@ export const Input = styled.input`
 `;
 
 export const StyledWrapper = styled(Wrapper)`
-	width: 45rem;
+	max-width: 45rem;
 `;
 
 export const ErrorMessage = styled.p`

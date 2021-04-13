@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph, Wrapper } from "../styles/theme/styled-components";
+import { Wrapper } from "../styles/theme/styled-components";
 import HeroBanner from "../img/illustration-hero.svg";
 import {
 	StyledHero,

@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import Tabs from "../components/Tabs";
-import { Paragraph, Title } from "../styles/theme/styled-components";
+import { Title } from "../styles/theme/styled-components";
+import { StyledFeatures, StyledParagraph } from "../styles/StyledFeatures";
 
 const Features = () => {
 	return (
@@ -18,16 +18,3 @@ const Features = () => {
 };
 
 export default Features;
-
-const StyledFeatures = styled.section`
-	padding-top: 8rem;
-
-	@media ${({ theme }) => theme.mediaQueries.tablet} {
-		padding: 15rem 3.2rem 0;
-	}
-`;
-
-const StyledParagraph = styled(Paragraph)`
-	max-width: 54rem;
-	text-align: center;
-`;

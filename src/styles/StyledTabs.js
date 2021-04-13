@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Paragraph, Title } from "../styles/theme/styled-components";
 
 export const StyledTabs = styled.div`
 	position: relative;
@@ -78,6 +79,15 @@ export const ContentText = styled(motion.div)`
 			padding-top: 1.5rem;
 		}
 	}
+`;
+
+export const StyledTitle = styled(Title)`
+	text-align: left;
+`;
+
+export const StyledParagraph = styled(Paragraph)`
+	margin-bottom: 3.2rem;
+	text-align: left;
 `;
 
 export const ImgContainer = styled(motion.div)`

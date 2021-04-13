@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ParagraphSmall, TitleSmall } from "../styles/theme/styled-components";
+import { PrimaryButton } from "../styles/StyledButton";
 
 export const StyledPricingCard = styled.div`
 	border-radius: 1.5rem;
@@ -33,6 +35,14 @@ export const StyledPricingCard = styled.div`
 	}
 `;
 
+export const StyledTitleSmall = styled(TitleSmall)`
+	margin: 3.2rem 0 0.6rem;
+`;
+
+export const StyledParagraphSmall = styled(ParagraphSmall)`
+	margin: 0 0 3.2rem;
+`;
+
 export const PricingImage = styled.img`
 	/* pricing image */
 `;
@@ -44,4 +54,8 @@ export const DividerContainer = styled.div`
 export const Divider = styled.img`
 	margin-bottom: 2.4rem;
 	width: 100%;
+`;
+
+export const StyledPrimaryButton = styled(PrimaryButton)`
+	display: block;
 `;

@@ -21,7 +21,7 @@ const Footer = () => {
 		<StyledFooter>
 			<Wrapper>
 				<FooterContent>
-					<FooterLogoLink onClick={toggleHome}>
+					<FooterLogoLink type="button" onClick={toggleHome}>
 						<FooterLogo />
 					</FooterLogoLink>
 					<FooterMenu>

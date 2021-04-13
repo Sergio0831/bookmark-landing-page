@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import { StyledArrowIcon } from "../styles/StyledArrowIcon";
 
 const ArrowIcon = ({ showInfo }) => {
 	return (
@@ -20,7 +20,3 @@ const ArrowIcon = ({ showInfo }) => {
 };
 
 export default ArrowIcon;
-
-const StyledArrowIcon = styled.svg`
-	transition: ${(props) => props.theme.transitions.basic};
-`;
