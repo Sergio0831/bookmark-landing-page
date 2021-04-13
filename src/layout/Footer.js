@@ -21,7 +21,13 @@ const Footer = () => {
 		<StyledFooter>
 			<Wrapper>
 				<FooterContent>
-					<FooterLogoLink type="button" onClick={toggleHome}>
+					<FooterLogoLink
+						type="button"
+						role="button"
+						aria-label="alternative for screen readers"
+						title="alternative for other users"
+						onClick={toggleHome}
+					>
 						<FooterLogo />
 					</FooterLogoLink>
 					<FooterMenu>
