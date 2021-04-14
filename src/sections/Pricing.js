@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import PricingCard from "../components/PricingCard";
 import { Title } from "../styles/theme/styled-components";
 import Chrome from "../img/logo-chrome.svg";
@@ -11,8 +13,12 @@ import {
 } from "../styles/StyledPricing";
 
 const Pricing = () => {
+	useEffect(() => {
+		AOS.init({ duration: 2000 });
+	}, []);
+
 	return (
-		<StyledPricing id="pricing">
+		<StyledPricing id="pricing" data-aos="fade-in">
 			<Title>Download the extension</Title>
 			<StyledParagraph>
 				We’ve got more browsers in the pipeline. Please do let us know if you’ve

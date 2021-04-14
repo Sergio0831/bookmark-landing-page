@@ -23,7 +23,6 @@ const Footer = () => {
 				<FooterContent>
 					<FooterLogoLink
 						type="button"
-						role="button"
 						aria-label="alternative for screen readers"
 						title="alternative for other users"
 						onClick={toggleHome}
